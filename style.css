@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.label {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform-origin: left top;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.label.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

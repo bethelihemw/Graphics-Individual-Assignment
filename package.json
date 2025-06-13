@@ -1,0 +1,11 @@
+{
+  "name": "3d-product-viewer",
+  "version": "1.0.0",
+  "description": "3D Product Viewer with Three.js",
+  "scripts": {
+    "start": "npx http-server . -o -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 
